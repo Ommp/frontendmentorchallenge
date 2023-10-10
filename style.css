@@ -1,0 +1,73 @@
+body {
+    font-size: 15px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 15svw;
+    padding-top: 3svh;
+    padding-bottom: 3svh;
+}
+
+.flex-container2 > p, h1, img {
+    margin-left: 1svw;
+    width: 80%;
+}
+
+.flex-container2 a {
+    margin-left: 1svw;
+    width: 40%;
+}
+
+
+.car-title {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.car-paragraph {
+    color: hsl(0, 0%, 95%);
+}
+
+.flex-container2:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.flex-container2:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.flex-container2:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.car-icon {
+    width: 25%;
+    height: auto;
+}
+
+.learn-more {
+    background: hsl(0, 0%, 95%);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
