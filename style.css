@@ -11,30 +11,10 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
 }
-
-.flex-container2 {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 15svw;
-    padding-top: 3svh;
-    padding-bottom: 3svh;
-}
-
-.flex-container2 > p, h1, img {
-    margin-left: 1svw;
-    width: 80%;
-}
-
-.flex-container2 a {
-    margin-left: 1svw;
-    width: 40%;
-}
-
 
 .car-title {
     text-transform: uppercase;
@@ -45,29 +25,83 @@ body {
     color: hsl(0, 0%, 95%);
 }
 
-.flex-container2:nth-child(1) {
+.flex:nth-child(1) {
     background-color: hsl(31, 77%, 52%);
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    grid-column: 2;
 }
-.flex-container2:nth-child(2) {
+
+.flex:nth-child(2) {
     background-color: hsl(184, 100%, 22%);
+    grid-column: 3;
 }
-.flex-container2:nth-child(3) {
+.flex:nth-child(3) {
     background-color: hsl(179, 100%, 13%);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    grid-column: 4;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 25px;
+}
+
+.flex p {
+    width: 200px;
 }
 
 .car-icon {
-    width: 25%;
+    width: 50px;
     height: auto;
 }
 
+
 .learn-more {
     background: hsl(0, 0%, 95%);
-    border-radius: 6px;
+    border-radius: 32px;
     text-align: center;
     text-decoration: none;
-    padding: 5px;
+    width: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.flex:nth-child(1) .learn-more {
+    color: hsl(31, 77%, 52%);
+}
+.flex:nth-child(2) .learn-more {
+    color: hsl(184, 100%, 22%);
+}
+.flex:nth-child(3) .learn-more {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen 
+and (max-width : 1000px) {
+.grid {
+    grid-template-columns: 1fr;
+}
+
+.flex:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+}
+
+.flex:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+.flex:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
 }
