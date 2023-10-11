@@ -1,5 +1,6 @@
 body {
     font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .attribution { 
@@ -19,6 +20,7 @@ body {
 .car-title {
     text-transform: uppercase;
     color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
 }
 
 .car-paragraph {
@@ -68,6 +70,10 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.learn-more:hover {
+    background: hsl(0, 0%, 90%);
 }
 
 .flex:nth-child(1) .learn-more {
